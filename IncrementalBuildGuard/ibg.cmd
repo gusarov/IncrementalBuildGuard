@@ -1,8 +1,8 @@
 @echo off
 set extra=%*
-msbuild -t:restore -clp:ErrorsOnly
+msbuild -m -clp:ErrorsOnly -t:restore
 if errorlevel 1 exit /b %errorlevel%
-msbuild -m %extra%
+msbuild -m -clp:ErrorsOnly %extra% 
 if errorlevel 1 exit /b %errorlevel%
 set f=%tmp%\ibg.flag
 del %f%
