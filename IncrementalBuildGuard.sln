@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncrementalBuildGuard", "IncrementalBuildGuard\IncrementalBuildGuard.csproj", "{F15AAC5F-F730-4B7B-A4F8-55DF5DA74749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncrementalBuildGuard.Tests", "IncrementalBuildGuard.Tests\IncrementalBuildGuard.Tests.csproj", "{293E5C5C-D8BB-4FB5-ABE3-C162621E5A7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F15AAC5F-F730-4B7B-A4F8-55DF5DA74749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15AAC5F-F730-4B7B-A4F8-55DF5DA74749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15AAC5F-F730-4B7B-A4F8-55DF5DA74749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15AAC5F-F730-4B7B-A4F8-55DF5DA74749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293E5C5C-D8BB-4FB5-ABE3-C162621E5A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293E5C5C-D8BB-4FB5-ABE3-C162621E5A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293E5C5C-D8BB-4FB5-ABE3-C162621E5A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293E5C5C-D8BB-4FB5-ABE3-C162621E5A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA7D8516-45D2-4666-963A-2136A394FDC2}
+	EndGlobalSection
+EndGlobal
