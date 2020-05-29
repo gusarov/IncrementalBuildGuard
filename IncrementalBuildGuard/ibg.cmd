@@ -1,12 +1,15 @@
 @echo off
 set extra=%*
-msbuild -m -clp:ErrorsOnly -t:restore
+echo Restoring...
+msbuild -noLogo -m -clp:ErrorsOnly -t:restore
 if errorlevel 1 exit /b %errorlevel%
-msbuild -m -clp:ErrorsOnly %extra% 
+echo Build one...
+msbuild -noLogo -m -clp:ErrorsOnly %extra% 
 if errorlevel 1 exit /b %errorlevel%
 set f=%tmp%\ibg.flag
-del %f%
-msbuild %extra% "-logger:IncrementalBuildGuardLogger,%~dp0IncrementalBuildGuard.dll;%f%" -clp:PerformanceSummary;v=q
+del %f% > nul
+echo Build two...
+msbuild -noLogo %extra% "-logger:IncrementalBuildGuardLogger,%~dp0IncrementalBuildGuard.dll;%f%" -clp:PerformanceSummary;v=q
 if errorlevel 1 exit /b %errorlevel%
 set issue=
 if exist "%f%" set issue=1
